@@ -36,7 +36,11 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+
+<!-- Style for Slide section -->
+
 <style>
+
 	.left {
     display: block;
 }
@@ -44,10 +48,18 @@
 .left-mobile {
     display: none;
 }
-/* Mobile desing */
+/*>>>> Mobile Design <<<<*/
+
+/* 0px  --  768px  */
 @media screen and (max-width: 768px) {
 	.first-pre{
-		background-size: contain !important;
+		background-image: url(./images/background-mobile.png) !important;
+		background-size: cover !important;
+		background-position: bottom;
+	}
+	.left-mobile .france-logo{
+		margin-bottom: 11px !important;
+    	margin-top: 14px !important;
 	}
     .left {
         display: none;
@@ -57,25 +69,40 @@
 		margin-top: 40px !important;
     	text-align: center;
     }
+	.left-mobile h1{
+		font-size: 22px !important;
+	}
+	.left-mobile h3{
+		font-size: 17px !important;
+	}
 	.left-mobile ul{
 		display: inline-block;
 	}
 	.left-mobile ul li{
 		width: fit-content;
 	}
+	.left-mobile ul li::marker{
+		font-size: 28px !important;
+	}
 }
+
+/* 0px  --  290px  */
 @media screen and (max-width: 290px){
 	.first-pre .container .row .right{
 		height: 215px !important;
 		background-position: center !important;
 	}
 }
+
+/* 290px  --  350px  */
 @media screen and (min-width: 290px) and (max-width:350px){
 	.first-pre .container .row .right{
 		height: 270px !important;
 		background-position: center !important;
 	}
 }
+
+/* 350px  --  500px  */
 @media screen and (min-width: 350px) and (max-width:500px){
 	.first-pre .container .row .right{
 		height: 340px !important;
@@ -84,31 +111,56 @@
 
 	}
 }
-/* @media screen and (min-width: 300px) and (max-width:500px){
-	.first-pre .container .row .right{
-		background-position: -16px 5px;
-	}
-} */
+
+/* 500px  --  768px  */
 @media screen and (min-width: 500px) and (max-width:768px){
 	.first-pre .container .row .right{
 		background-position: center;
 		height: 450px !important;
 	}
 }
-@media screen and (min-width: 879px) and (max-width:1080px){
-	.first-pre .container .row .right{
-		background-position: -30px 20px;
-	}
-}
+/* ======================================================================================= */
+
+/*>>>> Desktop Design <<<<*/
+
+/* 768px  --  879px  */
 @media screen and (min-width: 768px) and (max-width:879px){
+	.first-pre{
+		background-position: -115px;
+	}
 	.first-pre .container .row .left{
 		margin-top: 170px !important;
 	}
 	.first-pre .container .row .right{
 		background-position: -25px 124px;
 	}
+	.first-pre .container .row .left h1{
+		font-size: 19px !important;
+	}
+
 }
+
+/* 879px  --  1080px  */
+@media screen and (min-width: 879px) and (max-width:1080px){
+	.first-pre{
+		background-position: -112px;
+	}
+	.first-pre .container .row .right{
+		/* background-position: -30px 20px; */
+		background-position: -25px 47px;
+	}
+}
+
+/* 1080px  --  1200px  */
+@media screen and (min-width:1080px) and (max-width:1200px){
+	.first-pre{
+		background-position: -106px !important;
+	}
+}
+
 </style>
+<!-- End Style Tag -->
+
 </head>
 <body class="animsition">
 
@@ -116,7 +168,7 @@
 	<header>
 		<!-- Header desktop -->
 		<div class="container-menu-desktop">
-			<div class="wrap-menu-desktop" style="background-image: url(./images/background.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+			<div class="wrap-menu-desktop">
 				<nav class="limiter-menu-desktop">
 					<div class="left-header">
 						<!-- Logo desktop -->		
@@ -130,29 +182,29 @@
 						<div class="menu-desktop">
 							<ul class="main-menu">
 								<li class="active-menu">
-									<a href="index.html" style="color: white;">ƏSAS SƏHİFƏ</a>
+									<a href="index.html">ƏSAS SƏHİFƏ</a>
 									
 								</li>
 
 								<li>
-									<a href="haqimizda.html" style="color: white;">HAQQIMIZDA</a>
+									<a href="haqimizda.html">HAQQIMIZDA</a>
 								</li>
 
 								<li>
-									<a href="https://wa.me/message/WH5GLVQF55SSA1" style="color: white;">MƏHSULU ALMAQ</a>
+									<a href="https://wa.me/message/WH5GLVQF55SSA1">MƏHSULU ALMAQ</a>
 									
 								</li>
 
 								<li>
-									<a href="meqaleler.html" style="color: white;">BLOQ</a>
+									<a href="meqaleler.html">BLOQ</a>
 								</li>
 
 								<li>
-									<a href="media.html" style="color: white;">MEDİA</a>
+									<a href="media.html">MEDİA</a>
 								</li>
 
 								<li>
-									<a href="elaqe.html" style="color: white;">ƏLAQƏ</a>
+									<a href="elaqe.html">ƏLAQƏ</a>
 								</li>
 							</ul>
 						</div>
@@ -164,7 +216,7 @@
 		</div>
 
 		<!-- Header Mobile -->
-		<div class="wrap-header-mobile" style="background-image: url(./images/background.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+		<div class="wrap-header-mobile">
 			<!-- Logo moblie -->		
 			<div class="logo-mobile">
 				<a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
@@ -238,50 +290,51 @@
 						<div class="col-md-6 left" style="margin-top: 199px;position: relative;">
 							<h1 style="
 							color: white;
-							font-size: 24px;
+							font-size: 21px;
 							font-weight: 900;
 							margin-bottom: 10px;">
 								2 FAZALI ÇATDIRILMA SİSTEMİ
 							</h1>
 							<h3 style="
 							color: white;
-							font-size: 19px;
+							font-size: 17px;
 							font-weight: 400;">
 								VƏ MİKROİNKAPSULYASİYA TEXNOLOGİYASI
 							</h3>
 							<ul class="a" style="list-style-type: circle;color: white;margin-top: 55px;padding-left: 18px;">
-								<li style="list-style-type: circle;font-size: 24px;font-weight: 600;">Yüksək effektivlik</li>
-								<li style="list-style-type: circle;font-size: 24px;font-weight: 600;">Uzunmüddətli stabillik</li>
-								<li style="list-style-type: circle;font-size: 24px;font-weight: 600;">Minimum yan təsir</li>
-								<li style="list-style-type: circle;font-size: 24px;font-weight: 600;">Qəbul rahatlığı</li>
+								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Yüksək effektivlik</li>
+								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Uzunmüddətli stabillik</li>
+								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Minimum yan təsir</li>
+								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Qəbul rahatlığı</li>
 							</ul>
 							<img src="./images/france.png" alt="" style="
-							position: absolute;
 							width: 22%;
 							display: block;
-							bottom: 35px;">
+							bottom: 35px;
+							margin-top: 40px;
+    						margin-bottom: 40px;">
 						</div>
 						<div class="col-md-6 right" style="background-image: url(images/medicine.png);height: 570px;background-size: contain;background-repeat: no-repeat;">
 						</div>
 						<div class="col-md-6 left-mobile" style="margin-top: 199px;">
 							<h1 style="
-							color: white;
+							color: black;
 							font-size: 24px;
 							font-weight: 900;
 							margin-bottom: 10px;">
 								2 FAZALI ÇATDIRILMA SİSTEMİ
 							</h1>
 							<h3 style="
-							color: white;
+							color: black;
 							font-size: 19px;
 							font-weight: 400;">
 								VƏ MİKROİNKAPSULYASİYA TEXNOLOGİYASI
 							</h3>
-							<ul class="a" style="list-style-type: circle;color: white;margin-top: 55px;padding-left: 18px;">
-								<li style="list-style-type: circle;font-size: 24px;font-weight: 600;">Yüksək effektivlik</li>
-								<li style="list-style-type: circle;font-size: 24px;font-weight: 600;">Uzunmüddətli stabillik</li>
-								<li style="list-style-type: circle;font-size: 24px;font-weight: 600;">Minimum yan təsir</li>
-								<li style="list-style-type: circle;font-size: 24px;font-weight: 600;">Qəbul rahatlığı</li>
+							<ul class="a" style="list-style-type: circle;color: black;margin-top: 55px;padding-left: 18px;">
+								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Yüksək effektivlik</li>
+								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Uzunmüddətli stabillik</li>
+								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Minimum yan təsir</li>
+								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Qəbul rahatlığı</li>
 							</ul>
 							<div class="france-logo" style="
 							display: flex;
