@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -40,7 +42,9 @@
 <!-- Style for Slide section -->
 
 <style>
-
+.first-pre .container .row{
+	font-family: 'Montserrat' !important;
+}
 	.left {
     display: block;
 }
@@ -74,6 +78,7 @@
 	}
 	.left-mobile h3{
 		font-size: 17px !important;
+		margin-bottom: 17% !important;
 	}
 	.left-mobile ul{
 		display: inline-block;
@@ -100,25 +105,39 @@
 		height: 270px !important;
 		background-position: center !important;
 	}
+	.first-pre .container .row .left-mobile ul li{
+		font-size: 17px !important;
+	}
+	.first-pre .container .row .left-mobile img{
+		width: 120px !important;
+	}
 }
 
 /* 350px  --  500px  */
 @media screen and (min-width: 350px) and (max-width:500px){
 	.first-pre .container .row .right{
 		height: 340px !important;
-		background-position: center !important;
-		background-position: -16px 5px;
-
+		background-position: center;
+		background-position-x: 39%;
+	}
+	.first-pre .container .row .left-mobile ul li{
+		font-size: 19px !important;
 	}
 }
 
 /* 500px  --  768px  */
 @media screen and (min-width: 500px) and (max-width:768px){
+	.first-pre{
+		background-position-y: 40%;
+        background-repeat: no-repeat;
+	}
 	.first-pre .container .row .right{
 		background-position: center;
 		height: 450px !important;
+		background-position-x: 37%;
 	}
 }
+
 /* ======================================================================================= */
 
 /*>>>> Desktop Design <<<<*/
@@ -318,19 +337,19 @@
 						</div>
 						<div class="col-md-6 left-mobile" style="margin-top: 199px;">
 							<h1 style="
-							color: black;
+							color: #81b03f;
 							font-size: 24px;
 							font-weight: 900;
 							margin-bottom: 10px;">
 								2 FAZALI ÇATDIRILMA SİSTEMİ
 							</h1>
 							<h3 style="
-							color: black;
+							color: #81b03f;
 							font-size: 19px;
 							font-weight: 400;">
 								VƏ MİKROİNKAPSULYASİYA TEXNOLOGİYASI
 							</h3>
-							<ul class="a" style="list-style-type: circle;color: black;margin-top: 55px;padding-left: 18px;">
+							<ul class="a" style="list-style-type: circle;color: white;margin-top: 55px;padding-left: 18px;">
 								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Yüksək effektivlik</li>
 								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Uzunmüddətli stabillik</li>
 								<li style="list-style-type: circle;font-size: 22px;font-weight: 600;">Minimum yan təsir</li>
